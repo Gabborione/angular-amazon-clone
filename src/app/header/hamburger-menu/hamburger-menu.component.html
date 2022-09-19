@@ -1,0 +1,61 @@
+<div [ngClass]="{'dark-background': isOpen}"></div>
+<div [ngClass]="{'active': isOpen}" class="menu-container">      
+    <mat-icon class="closeMenu" (click)="closeMenu()">close</mat-icon> 
+    <a href="/" class="menu-container-account">
+        <mat-icon class="menu-container__account-icon">account_circle</mat-icon>
+        <h1>Ciao, accedi</h1>
+    </a>
+    <div class="menu-container__list">   
+        <div class="menu-container__list-element">
+            <h2 class="menu-container__list-title">Di Tendenza</h2>
+            <ul>
+                <li>Bestseller</li>
+                <li>Novità</li>
+                <li>I prodotti del momento</li>
+            </ul>
+        </div>
+        <hr class="menu-container__divider">
+        <div class="menu-container__list-element">
+            <h2 class="menu-container__list-title">Dispositivi E Contenuti Digitali</h2>
+            <ul>
+                <li>Amazon Prime Video <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Amazon Music <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Amazon Photos <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Echo e Alexa <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Amazon Fire TV <mat-icon>keyboard_arrow_right</mat-icon></li>
+            </ul>
+        </div>
+        <hr class="menu-container__divider">
+        <div class="menu-container__list-element">
+            <h2 class="menu-container__list-title">Scegli Per Categoria</h2>
+            <ul>
+                <li>Libri <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Musica, Film e TV <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Videogiochi e Console <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Elettronica e Informatica <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Mostra Tutto <mat-icon>keyboard_arrow_down</mat-icon></li>
+            </ul>
+        </div>
+        <hr class="menu-container__divider">
+        <div class="menu-container__list-element">
+            <h2 class="menu-container__list-title">Programmi E Caratteristiche</h2>
+            <ul>
+                <li>Finanziamento con Cofidis</li>
+                <li>Made in Italy <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Handmade <mat-icon>keyboard_arrow_right</mat-icon></li>
+                <li>Luxury Stores</li>
+                <li>Mostra Tutto</li>
+            </ul>
+        </div>
+        <hr class="menu-container__divider">
+        <div class="menu-container__list-element">
+            <h2 class="menu-container__list-title">Aiuto E Impostazioni</h2>
+            <ul>
+                <li>Il mio account</li>
+                <li>Servizio clienti</li>
+                <li>Accedi</li>
+            </ul>
+        </div>
+    </div>  
+</div>
+

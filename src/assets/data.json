@@ -1,0 +1,71 @@
+{
+    "Category": [
+        "Bestseller",
+        "Amazon Basic",
+        "Novità",
+        "Servizi Clienti",
+        "Musica",
+        "Offerte",
+        "Prime",
+        "Libri",
+        "Elettronica",
+        "eBook in italiano",
+        "Videogiochi",
+        "Informatica"
+    ],
+
+    "CardMenu":[
+        {
+            "title": "I prodotti del momento in Casa e Cucina",
+            "imgUrl": "https://images-eu.ssl-images-amazon.com/images/G/29/Prime/2022/GTM/August/Bestseller/Home/XCM_CUTTLE_1458001_2516071_758x608_2X_it_IT._SY608_CB629572855_.jpg",
+            "linkText": "Lasciati ispirare",
+            "linkUrl": "https://www.amazon.it/gp/movers-and-shakers/kitchen?pf_rd_r=1TK4HTMTW83EA3X5VTJB&pf_rd_p=5dfccbd1-d8fa-4528-85d1-32327fe72962&pd_rd_r=4e8cd5ab-6f3f-4303-9b71-9c8f9259f187&pd_rd_w=uGrXo&pd_rd_wg=7sfr1&ref_=pd_gw_unk"
+        },
+        {
+            "title": "Informatica",
+            "imgUrl": "https://images-eu.ssl-images-amazon.com/images/G/29/Events/2021/IT_fallback_campaigns/XCM_CUTTLE_1321861_1653915_DE_3783397_758x608_2X_IT._SY608_CB639715330_.jpg",
+            "linkText": "Scopri di più",
+            "linkUrl": "https://www.amazon.it/gp/movers-and-shakers/kitchen?pf_rd_r=1TK4HTMTW83EA3X5VTJB&pf_rd_p=5dfccbd1-d8fa-4528-85d1-32327fe72962&pd_rd_r=4e8cd5ab-6f3f-4303-9b71-9c8f9259f187&pd_rd_w=uGrXo&pd_rd_wg=7sfr1&ref_=pd_gw_unk"
+        },
+        {
+            "title": "Salute e cura della persona: prodotti del momento",
+            "imgUrl": "https://images-eu.ssl-images-amazon.com/images/G/29/Prime/2022/GTM/August/Bestseller/PCA/XCM_CUTTLE_1458020_2516249_758x608_2X_it_IT._SY608_CB629575489_.jpg",
+            "linkText": "Lasciati ispirare",
+            "linkUrl": "https://www.amazon.it/gp/movers-and-shakers/kitchen?pf_rd_r=1TK4HTMTW83EA3X5VTJB&pf_rd_p=5dfccbd1-d8fa-4528-85d1-32327fe72962&pd_rd_r=4e8cd5ab-6f3f-4303-9b71-9c8f9259f187&pd_rd_w=uGrXo&pd_rd_wg=7sfr1&ref_=pd_gw_unk"
+        },
+        {
+            "title": "Preparati per il ritorno a scuola",
+            "imgUrl": "https://images-eu.ssl-images-amazon.com/images/G/29/Events/2022/BTS/TD_Generic/xcm_banners_-e-1654271220060_758x608_it-en._SY608_CB635992654_.jpg",
+            "linkText": "Scopri di più",
+            "linkUrl": "https://www.amazon.it/gp/movers-and-shakers/kitchen?pf_rd_r=1TK4HTMTW83EA3X5VTJB&pf_rd_p=5dfccbd1-d8fa-4528-85d1-32327fe72962&pd_rd_r=4e8cd5ab-6f3f-4303-9b71-9c8f9259f187&pd_rd_w=uGrXo&pd_rd_wg=7sfr1&ref_=pd_gw_unk"
+        },
+        {
+            "title": "I prodotti del momento in Casa e Cucina",
+            "imgUrl": "https://images-eu.ssl-images-amazon.com/images/G/29/Prime/2022/GTM/August/Bestseller/Home/XCM_CUTTLE_1458001_2516071_758x608_2X_it_IT._SY608_CB629572855_.jpg",
+            "linkText": "Lasciati ispirare",
+            "linkUrl": "https://www.amazon.it/gp/movers-and-shakers/kitchen?pf_rd_r=1TK4HTMTW83EA3X5VTJB&pf_rd_p=5dfccbd1-d8fa-4528-85d1-32327fe72962&pd_rd_r=4e8cd5ab-6f3f-4303-9b71-9c8f9259f187&pd_rd_w=uGrXo&pd_rd_wg=7sfr1&ref_=pd_gw_unk"
+        },
+        {
+            "title": "I prodotti del momento in Casa e Cucina",
+            "imgUrl": "https://images-eu.ssl-images-amazon.com/images/G/29/Prime/2022/GTM/August/Bestseller/Home/XCM_CUTTLE_1458001_2516071_758x608_2X_it_IT._SY608_CB629572855_.jpg",
+            "linkText": "Lasciati ispirare",
+            "linkUrl": "https://www.amazon.it/gp/movers-and-shakers/kitchen?pf_rd_r=1TK4HTMTW83EA3X5VTJB&pf_rd_p=5dfccbd1-d8fa-4528-85d1-32327fe72962&pd_rd_r=4e8cd5ab-6f3f-4303-9b71-9c8f9259f187&pd_rd_w=uGrXo&pd_rd_wg=7sfr1&ref_=pd_gw_unk"
+        },
+        {
+            "title": "I prodotti del momento in Casa e Cucina",
+            "imgUrl": "https://images-eu.ssl-images-amazon.com/images/G/29/Prime/2022/GTM/August/Bestseller/Home/XCM_CUTTLE_1458001_2516071_758x608_2X_it_IT._SY608_CB629572855_.jpg",
+            "linkText": "Lasciati ispirare",
+            "linkUrl": "https://www.amazon.it/gp/movers-and-shakers/kitchen?pf_rd_r=1TK4HTMTW83EA3X5VTJB&pf_rd_p=5dfccbd1-d8fa-4528-85d1-32327fe72962&pd_rd_r=4e8cd5ab-6f3f-4303-9b71-9c8f9259f187&pd_rd_w=uGrXo&pd_rd_wg=7sfr1&ref_=pd_gw_unk"
+        },
+        {
+            "title": "I prodotti del momento in Casa e Cucina",
+            "imgUrl": "https://images-eu.ssl-images-amazon.com/images/G/29/Prime/2022/GTM/August/Bestseller/Home/XCM_CUTTLE_1458001_2516071_758x608_2X_it_IT._SY608_CB629572855_.jpg",
+            "linkText": "Lasciati ispirare",
+            "linkUrl": "https://www.amazon.it/gp/movers-and-shakers/kitchen?pf_rd_r=1TK4HTMTW83EA3X5VTJB&pf_rd_p=5dfccbd1-d8fa-4528-85d1-32327fe72962&pd_rd_r=4e8cd5ab-6f3f-4303-9b71-9c8f9259f187&pd_rd_w=uGrXo&pd_rd_wg=7sfr1&ref_=pd_gw_unk"
+        }
+
+    ]
+}
+    
+
+    

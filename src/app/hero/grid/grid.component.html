@@ -1,0 +1,15 @@
+<div class="hero">
+    <app-hero-carousel></app-hero-carousel>
+    
+    <div class="hero__grid">
+        <ng-container *ngIf="cards.length > 0 ;else other_template">      
+            <ng-container *ngFor="let card of cards">
+                <app-card [card]="card"></app-card>
+            </ng-container>
+        </ng-container>  
+    </div>  
+</div>
+
+<ng-template #other_template>
+    <h1>Nessuna Card</h1>
+</ng-template>

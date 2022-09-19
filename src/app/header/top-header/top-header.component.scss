@@ -1,0 +1,68 @@
+@use "src/mixins" as c;
+
+.header{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    background-color: var(--alternative-color);
+    align-items: center;
+    justify-content: space-between;
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: .9rem;
+    padding: 0.3rem 1rem;
+    gap: 1rem;
+
+    > *{
+        @include c.hover-border;  
+    }
+
+    :nth-child(3){
+        flex-grow: 1;
+
+        &:hover{
+            border: none;
+        }
+    }
+}
+
+.header__logo{
+    @include c.df-jcc-aic;
+    cursor: pointer;
+    max-width: 110px;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.header__subtext{
+    display: flex;
+    line-height: .9rem;
+
+    div{
+        @include c.df-jcc-aic;
+        flex-direction: column;
+        align-items: flex-start;
+
+        span{
+            font-size: 0.8rem;
+        }
+    }
+
+    span{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+.header__cart{
+    height: 100%;
+    @include c.df-jcc-aic;
+
+    *{
+        margin: 0;
+        @include c.df-jcc-aic;
+    }
+}

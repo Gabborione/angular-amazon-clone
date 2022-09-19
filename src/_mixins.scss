@@ -1,0 +1,19 @@
+@mixin df-jcc-aic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ @mixin hover-border{
+    cursor: pointer;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    @include df-jcc-aic;
+    padding: 0.3em;
+
+    &:hover{
+        border: 1px solid white;
+        border-radius: 3px;
+    } 
+ } 
