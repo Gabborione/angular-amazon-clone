@@ -4,7 +4,8 @@ import { TopHeaderComponent } from './top-header/top-header.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { MatIconModule } from "@angular/material/icon";
 import { BottomHeaderComponent } from './bottom-header/bottom-header.component';
-import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component'
+import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.component';
+import { LoginMenuComponent } from './login-menu/login-menu.component'
 
 
 
@@ -13,7 +14,8 @@ import { HamburgerMenuComponent } from './hamburger-menu/hamburger-menu.componen
     TopHeaderComponent,
     SearchbarComponent,
     BottomHeaderComponent,
-    HamburgerMenuComponent
+    HamburgerMenuComponent,
+    LoginMenuComponent
   ],
   imports: [
     CommonModule,

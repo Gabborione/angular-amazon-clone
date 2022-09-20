@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopHeaderComponent implements OnInit {
 
+  accountOpened: boolean= false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  async toggleMenu(){
+    if(this.accountOpened){
+      await new Promise(f => {setTimeout(f, 1000);
+      });
+    }
+    
+    this.accountOpened = !this.accountOpened
+    
+    
   }
 
 }

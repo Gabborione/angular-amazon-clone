@@ -15,13 +15,13 @@
         border-radius: 5px;        
     }
 
-    label{
+    select{
         background-color: hsl(0, 0%, 90%);
         width: 150px;
         height: 100%;
-        font-size: 0.7rem;
-        font-weight: 400;
-        color: hsl(0, 0%, 28%);
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: hsl(0, 0%, 16%);
         border-top-left-radius: 3px;
         border-bottom-left-radius: 3px;
         text-align: center;
@@ -34,14 +34,24 @@
         &:hover{
             background-color: hsl(0, 0%, 73%);
         }
+
+        &:focus{           
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        option{
+            background-color: white;
+        }
     }
+
 
     input{
         height: 100%;
         width: 100%;
         border: 0; 
         padding-inline: 0.5rem;
-        font-size: 1rem;;
+        font-size: 1rem;
         
         &:focus{
             outline: none;

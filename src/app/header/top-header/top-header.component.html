@@ -1,41 +1,56 @@
 <div class="header">
-	<a class="header__logo" href="/">
-		<img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="logo-amazon" />
-	</a>
-	<div class="header__subtext">
-        <mat-icon style="font-size: 1.5rem;">place</mat-icon>
+    <a class="header__logo" href="/">
+        <img
+            src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+            alt="logo-amazon"
+        />
+        <span>.it</span>
+    </a>
+    <div class="header__subtext">
+        <mat-icon style="font-size: 1.5rem">place</mat-icon>
         <div>
             <span>Ciao</span>
             Scegli il tuo indirizzo
         </div>
-        
     </div>
-	<app-searchbar></app-searchbar>
-	<div class="header__subtext">
+    <app-searchbar></app-searchbar>
+    <div
+        class="header__subtext"
+        (mouseenter)="toggleMenu()"
+        (mouseleave)="toggleMenu()"
+    >
         <div>
             <span>Ciao, accedi</span>
-            <div style="display: flex; align-items: center; flex-direction: row;">Account e liste
+            <div
+                style="display: flex; align-items: center; flex-direction: row"
+            >
+                Account e liste
                 <mat-icon>arrow_drop_down</mat-icon>
             </div>
-            
         </div>
-        
     </div>
-	<div class="header__subtext">
+    <div class="header__subtext">
         <div>
             <span>Resi</span>
             e ordini
         </div>
-        
     </div>
-	<div class="header__cart">
-        
-            <div style="display: flex; flex-direction: column; justify-content: center; margin:0;">
-                <span  style="margin-bottom: -0.2rem; color: orange;">0</span>
-                <mat-icon style="margin-bottom: .8rem; font-size: 2rem;">shopping_cart</mat-icon>
-            </div>
-            <br />
-            Carrello
-           
+    <div class="header__cart">
+        <div
+            style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0;
+            "
+        >
+            <span style="margin-bottom: -0.2rem; color: orange">0</span>
+            <mat-icon style="margin-bottom: 0.8rem; font-size: 2rem"
+                >shopping_cart</mat-icon
+            >
+        </div>
+        <br />
+        Carrello
     </div>
 </div>
+<app-login-menu [(isOpen)]="accountOpened"></app-login-menu>

@@ -26,8 +26,12 @@
 
 .card__link{
     text-decoration: none;
-    color: gray;
     width: 100%;
     text-align: start;
     margin-top: 1rem;
+
+    &:hover{
+        color:var(--main-color-dark);
+        text-decoration: underline;
+    }
 }
