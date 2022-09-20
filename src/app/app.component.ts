@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'amazon-clone';
+  darkOverlay: boolean = false;
+
+  toggleOverlay(focus: boolean){
+    this.darkOverlay = focus;
+  }
 }

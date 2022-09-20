@@ -1,11 +1,67 @@
-<form class="searchbar">
-    <select id="categories">
-        <option label="Tutte le categorie">Tutte le categorie</option>
-        <option label="Saab">Saab (Swedish Aeroplane AB)</option>
-        <option label="Mercedes">Mercedes (Mercedes-Benz)</option>
-        <option label="Audi">Audi (Auto Union Deutschland Ingolstadt)</option>
+<form [ngClass]="{ onFocus: totalFocus }" class="searchbar">
+    <select
+        (focus)="labelFocus = true"
+        (focusout)="labelFocus = false"
+        [ngClass]="{ onFocus: labelFocus }"
+        id="categories"
+    >
+        <option selected="selected" value="search-alias=aps">
+            Tutte le categorie
+        </option>
+        <option value="search-alias=apparel">Abbigliamento</option>
+        <option value="search-alias=alexa-skills">Alexa Skill</option>
+        <option value="search-alias=grocery">
+            Alimentari e cura della casa
+        </option>
+        <option value="search-alias=amazon-global-store">
+            Amazon Global Store
+        </option>
+        <option value="search-alias=warehouse-deals">Amazon Warehouse</option>
+        <option value="search-alias=mobile-apps">App e Giochi</option>
+        <option value="search-alias=audible">Audiolibri Audible</option>
+        <option value="search-alias=automotive">
+            Auto e Moto - Parti e Accessori
+        </option>
+        <option value="search-alias=beauty">Bellezza</option>
+        <option value="search-alias=gift-cards">Buoni Regalo</option>
+        <option value="search-alias=office-products">
+            Cancelleria e prodotti per ufficio
+        </option>
+        <option value="search-alias=kitchen">Casa e cucina</option>
+        <option value="search-alias=popular">CD e Vinili</option>
+        <option value="search-alias=amazon-devices">Dispositivi Amazon</option>
+        <option value="search-alias=electronics">Elettronica</option>
+        <option value="search-alias=diy">Fai da te</option>
+        <option value="search-alias=dvd">Film e TV</option>
+        <option value="search-alias=garden">Giardino e giardinaggio</option>
+        <option value="search-alias=toys">Giochi e giocattoli</option>
+        <option value="search-alias=jewelry">Gioielli</option>
+        <option value="search-alias=appliances">Grandi elettrodomestici</option>
+        <option value="search-alias=handmade">Handmade</option>
+        <option value="search-alias=lighting">Illuminazione</option>
+        <option value="search-alias=industrial">Industria e Scienza</option>
+        <option value="search-alias=computers">Informatica</option>
+        <option value="search-alias=specialty-aps-sns">
+            Iscriviti e Risparmia
+        </option>
+        <option value="search-alias=digital-text">Kindle Store</option>
+        <option value="search-alias=stripbooks">Libri</option>
+        <option value="search-alias=luxury">Luxury Stores</option>
+        <option value="search-alias=under-ten-dollars">Meno di 10€</option>
+        <option value="search-alias=fashion">Moda</option>
+        <option value="search-alias=digital-music">Musica Digitale</option>
+        <option value="search-alias=watches">Orologi</option>
+        <option value="search-alias=baby">Prima infanzia</option>
+        <option value="search-alias=instant-video">Prime Video</option>
+        <option value="search-alias=hpc">Salute e cura della persona</option>
+        <option value="search-alias=shoes">Scarpe e borse</option>
+        <option value="search-alias=software">Software</option>
+        <option value="search-alias=sporting">Sport e tempo libero</option>
+        <option value="search-alias=mi">Strumenti musicali e DJ</option>
+        <option value="search-alias=luggage">Valigeria</option>
+        <option value="search-alias=videogames">Videogiochi</option>
     </select>
-    <input />
+    <input (focus)="toggleFocus()" (focusout)="toggleFocus()" />
     <button type="submit">
         <mat-icon>search</mat-icon>
     </button>

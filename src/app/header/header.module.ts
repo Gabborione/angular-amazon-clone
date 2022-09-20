@@ -23,7 +23,8 @@ import { LoginMenuComponent } from './login-menu/login-menu.component'
   ],
   exports: [
     TopHeaderComponent,
-    BottomHeaderComponent
+    BottomHeaderComponent,
+    SearchbarComponent
   ]
 })
 export class HeaderModule { }

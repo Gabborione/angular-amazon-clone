@@ -1,5 +1,7 @@
-<div class="main-header">
-    <app-top-header></app-top-header>
+<div [ngClass]="{ 'dark-overlay': darkOverlay }" class="main-header">
+    <app-top-header
+        (darkOverlayChange)="toggleOverlay($any($event))"
+    ></app-top-header>
     <app-bottom-header></app-bottom-header>
 </div>
 <app-grid></app-grid>

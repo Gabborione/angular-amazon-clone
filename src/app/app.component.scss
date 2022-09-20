@@ -2,13 +2,12 @@
     position: relative;
     box-shadow: none;
     transition: box-shadow 0.2s;
+}
 
-    &:focus-within{
-        -webkit-box-shadow: 5px 5px 0px 10000px hsl(0, 0%, 0%);
-        -moz-box-shadow: 5px 5px 0px 10000px hsla(0, 0%, 0%, 0.384);
-        -o-box-shadow: 5px 5px 0px 10000px hsla(0, 0%, 0%, 0.384);
-        box-shadow: 5px 5px 0px 10000px hsla(0, 0%, 0%, 0.650);
-        z-index: 100;
-        
-    }
+.dark-overlay{
+    -webkit-box-shadow: 5px 5px 0px 10000px hsla(0, 0%, 0%, 0.650);
+    -moz-box-shadow: 5px 5px 0px 10000px hsla(0, 0%, 0%, 0.650);
+    -o-box-shadow: 5px 5px 0px 10000px hsla(0, 0%, 0%, 0.650);
+    box-shadow: 5px 5px 0px 10000px hsla(0, 0%, 0%, 0.650);
+    z-index: 100;
 }

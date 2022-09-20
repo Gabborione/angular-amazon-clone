@@ -13,7 +13,9 @@
             Scegli il tuo indirizzo
         </div>
     </div>
-    <app-searchbar></app-searchbar>
+    <app-searchbar
+        (totalFocusChange)="toggleOverlay($any($event))"
+    ></app-searchbar>
     <div
         class="header__subtext"
         (mouseenter)="toggleMenu()"

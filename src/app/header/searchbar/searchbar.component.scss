@@ -9,12 +9,6 @@
     width: 100%;
     max-width: 80vw;
 
-    &:focus-within{
-        z-index: 100;
-        outline: 2px solid hsl(46, 100%, 44%);
-        border-radius: 5px;        
-    }
-
     select{
         background-color: hsl(0, 0%, 90%);
         width: 150px;
@@ -32,19 +26,24 @@
         cursor: pointer;
 
         &:hover{
-            background-color: hsl(0, 0%, 73%);
+            background-color: hsl(0, 0%, 85%);
+            color: black;
         }
 
         &:focus{           
             overflow-y: scroll;
             overflow-x: hidden;
+            outline: 2px solid hsl(46, 100%, 44%);
+            border-radius: 5px;     
         }
 
         option{
             background-color: white;
+            text-align: start;
+            font-size: 1rem;
+            font-weight: 500;
         }
     }
-
 
     input{
         height: 100%;
@@ -78,4 +77,10 @@
             font-size: 1.5rem;
         }
     }
+}
+
+.onFocus{
+    z-index: 100;
+    outline: 2px solid hsl(46, 100%, 44%);
+    border-radius: 5px; 
 }
