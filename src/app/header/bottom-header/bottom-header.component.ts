@@ -2,6 +2,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from "@angular/common/http";
 import { DataResult } from 'src/dto/DataResult';
+import { AppState } from 'src/app/store/app.state';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-bottom-header',
@@ -11,15 +13,12 @@ import { DataResult } from 'src/dto/DataResult';
 export class BottomHeaderComponent implements OnInit {
 
   @Input() menuOpened: boolean = false;
-  items: any = [];
+  items$: Observable<Array<String>> = this.store.select('categories');
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
-    this.httpClient.get<DataResult>("assets/data.json").subscribe(
-      ({Category}) => {     
-      this.items = Category;
-    })
+
   }
 
   openMenu(){

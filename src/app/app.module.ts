@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeroModule } from './hero/hero.module';
 import { StoreModule } from '@ngrx/store';
 import { categoryReducer } from './store/reducers/category.reducer';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,10 @@ import { categoryReducer } from './store/reducers/category.reducer';
     BrowserAnimationsModule,
     MatIconModule,
     HttpClientModule,
-    StoreModule.forRoot({}),
+    StoreModule.forRoot({categories: categoryReducer}),
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

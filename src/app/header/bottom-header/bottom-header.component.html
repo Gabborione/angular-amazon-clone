@@ -3,14 +3,15 @@
         <div class="bottom-header__hamburger" (click)="openMenu()">
             <h3><mat-icon>menu</mat-icon>Tutte</h3>
         </div>
-        
-        <ng-container *ngFor="let item of items">
-            <h3>{{item}}</h3>
+
+        <ng-container *ngFor="let item of items$ | async">
+            <h3>{{ item }}</h3>
         </ng-container>
     </div>
-    
-    <h3 class="bottom-header__right">Scopri migliaia di audiolibri su Audible</h3>
+
+    <h3 class="bottom-header__right">
+        Scopri migliaia di audiolibri su Audible
+    </h3>
 </div>
 
 <app-hamburger-menu [(isOpen)]="menuOpened"></app-hamburger-menu>
-

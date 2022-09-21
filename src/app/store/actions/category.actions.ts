@@ -1,13 +1,11 @@
-import { Action } from "@ngrx/store";
+import { createAction, props } from "@ngrx/store";
 
 export enum CategoryActionType{
-    GET_CATEGORY = "[GET] Get Category"
+    ADD_CATEGORY = "[POST] Get Category"
 }
 
-export class GetCategoryAction implements Action{
-    readonly type = CategoryActionType.GET_CATEGORY;
-
-    constructor(public payload: string){}
-}
-
-export type CategoryAction = GetCategoryAction;
+export const AddCategoryAction = createAction(
+    '[CATEGORY] Add Item',
+    props<{payload: string}>()
+);
+    

@@ -1,15 +1,18 @@
-import { CategoryAction, CategoryActionType } from "../actions/category.actions";
+import { Action, createReducer, on } from "@ngrx/store";
+import { AddCategoryAction, CategoryActionType } from "../actions/category.actions";
 
 const initialState: Array<string> = [];
 
+const reducer = createReducer(
+    initialState,
+    on(AddCategoryAction, (state, action) => {
+        return [...state, action.payload]
+    })
+);
+
 export function categoryReducer(
-    state: Array<string> = initialState,
-    action: CategoryAction
+    state: Array<string> | undefined = initialState,
+    action: Action
 ){
-    switch(action.type){
-        case CategoryActionType.GET_CATEGORY:
-            return [...state, action.payload];
-        default:
-            return state;
-    }
+    return reducer(state, action);
 }
