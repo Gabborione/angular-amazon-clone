@@ -18,8 +18,8 @@
     ></app-searchbar>
     <div
         class="header__subtext"
-        (mouseenter)="toggleMenu()"
-        (mouseleave)="toggleMenu()"
+        (mouseenter)="openMenu()"
+        (mouseleave)="closeMenu()"
     >
         <div>
             <span>Ciao, accedi</span>
@@ -38,21 +38,15 @@
         </div>
     </div>
     <div class="header__cart">
-        <div
-            style="
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin: 0;
-            "
-        >
+        <div>
             <span style="margin-bottom: -0.2rem; color: orange">0</span>
             <mat-icon style="margin-bottom: 0.8rem; font-size: 2rem"
                 >shopping_cart</mat-icon
             >
+            <!-- <img src="assets/images/amazon-cart.png" alt="" /> -->
         </div>
         <br />
         Carrello
     </div>
 </div>
-<app-login-menu [(isOpen)]="accountOpened"></app-login-menu>
+<app-login-menu (isOpenChange)="closeAccount($any($event))"></app-login-menu>

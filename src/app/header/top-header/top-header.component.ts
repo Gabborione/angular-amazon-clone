@@ -1,38 +1,71 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import {
+    closeMenuAction,
+    openMenuAction
+} from 'src/app/store/actions/accountMenu.actions';
+import { AppState } from 'src/app/store/app.state';
 
 @Component({
-  selector: 'app-top-header',
-  templateUrl: './top-header.component.html',
-  styleUrls: ['./top-header.component.scss']
+    selector: 'app-top-header',
+    templateUrl: './top-header.component.html',
+    styleUrls: ['./top-header.component.scss']
 })
 export class TopHeaderComponent implements OnInit {
+    accountOpened: boolean = false;
+    @Output() darkOverlayChange = new EventEmitter<boolean>();
 
-  accountOpened: boolean= false;
-  @Output() darkOverlayChange = new EventEmitter<boolean>();
+    constructor(private store: Store<AppState>) {}
 
-  constructor() { }
+    ngOnInit(): void {}
 
-  ngOnInit(): void {
-  }
-
-  async toggleMenu(){
-    if(this.accountOpened){
-      await new Promise(f => {setTimeout(f, 1000);
-      });
-      this.accountOpened = false
+    async toggleMenu() {
+        if (this.accountOpened) {
+            await new Promise((f) => {
+                setTimeout(f, 1000);
+            });
+            this.store.dispatch(closeMenuAction());
+        } else {
+            this.store.dispatch(openMenuAction());
+        }
     }
-    else{
-      this.accountOpened = true;
+
+    openMenu() {
+        this.store.dispatch(openMenuAction());
+        this.toggleOverlay(true);
     }
-  }
 
-  toggleOverlay(focus: boolean){
-    console.log(focus);
-    this.change(focus);
-  }
+    closeAccount(open: boolean) {
+        this.accountOpened = open;
+        this.close();
+    }
 
-  private change(focus: boolean){
-    this.darkOverlayChange.emit(focus);
-  }
+    async closeMenu() {
+        if (!this.accountOpened) {
+            await new Promise((f) => {
+                setTimeout(f, 1000);
+            });
 
+            this.close();
+        }
+    }
+
+    private close() {
+        if (!this.accountOpened) {
+            this.store.dispatch(closeMenuAction());
+
+            if (this.store.select('accountMenu')) {
+                this.toggleOverlay(false);
+            }
+        }
+    }
+
+    toggleOverlay(focus: boolean) {
+        this.change(focus);
+    }
+
+    private change(focus: boolean) {
+        this.darkOverlayChange.emit(focus);
+    }
 }

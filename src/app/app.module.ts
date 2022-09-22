@@ -11,6 +11,8 @@ import { HeroModule } from './hero/hero.module';
 import { StoreModule } from '@ngrx/store';
 import { categoryReducer } from './store/reducers/category.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { cardReducer } from './store/reducers/card.reducer';
+import { accountMenuReducer } from './store/reducers/accountMenu.reducer';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,11 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     BrowserAnimationsModule,
     MatIconModule,
     HttpClientModule,
-    StoreModule.forRoot({categories: categoryReducer}),
+    StoreModule.forRoot({
+      categories: categoryReducer,
+      cards: cardReducer,
+      accountMenu: accountMenuReducer
+    }),
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
     }),

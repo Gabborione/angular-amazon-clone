@@ -1,5 +1,6 @@
 <div
-    [ngClass]="{ 'menu-active': isOpen }"
+    [ngClass]="{ 'menu-active': opened | async }"
+    (mouseenter)="openMenu()"
     (mouseleave)="closeMenu()"
     class="login-container"
 >
